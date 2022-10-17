@@ -1,0 +1,30 @@
+.word span {
+  z-index: 10;
+  display: none;
+  position: absolute;
+  color: #000;
+  font-size: 0.75em;
+  background: rgb(255, 255, 255);
+  padding: 5px;
+  border: 1px solid #000;
+}
+
+.word:hover span {
+  display: block;
+  text-align: center;
+}
+
+.word {
+  position: relative;
+  font-size: 1em;
+  font-weight: bold;
+}
+.word::after {
+  content: attr(title);
+  position: absolute;
+  top: 2.5em;
+  left: 0;
+  font-size: 0.5em;
+  font-weight: normal;
+  text-transform: uppercase;
+}
