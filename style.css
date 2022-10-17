@@ -2,11 +2,11 @@
   z-index: 10;
   display: none;
   position: absolute;
-  color: #000;
+  /* /* color: #000; */
   font-size: 0.75em;
-  background: rgb(255, 255, 255);
-  padding: 5px;
-  border: 1px solid #000;
+  /* background: rgb(255, 255, 255); */
+  padding: 0.5em;
+  border: 1px solid rgb(105, 105, 105);
 }
 
 .word:hover span {
@@ -22,9 +22,9 @@
 .word::after {
   content: attr(title);
   position: absolute;
-  top: 2.5em;
+  top: 1.5em;
   left: 0;
-  font-size: 0.5em;
+  font-size: 0.75em;
   font-weight: normal;
   text-transform: uppercase;
 }
